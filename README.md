@@ -22,7 +22,7 @@ In RHEL8-
 * Get the IP of minikube
 ![](JenkinswithKubernetes/6.PNG)
 
-*[Here the port number is 8843,therefore the IP becomes http://192.168.99.100:8443]
+***[Here the port number is 8843,therefore the IP becomes http://192.168.99.100:8443]***
 
 * Now in order to create the config file to run kubectl commands we need three files-client.key,client.crt & ca.crt which will be available at following paths-
 ![](JenkinswithKubernetes/7.PNG)
@@ -36,7 +36,7 @@ In RHEL8-
 * Now run the following command on Terminal in RHEL8
 ![](JenkinswithKubernetes/12.PNG)
 
-*Now using this command we can create ,run, delete pods/deployements etc ,resources on RHEL8 Kubernetes which will remain in sync with the Kubernetes on your system ,in mycase its Windows 10.
+***Now using this command we can create ,run, delete pods/deployements etc ,resources on RHEL8 Kubernetes which will remain in sync with the Kubernetes on your system ,in mycase its Windows 10.***
 
 ![](JenkinswithKubernetes/13.PNG)
 ![](JenkinswithKubernetes/14.PNG)
@@ -59,13 +59,14 @@ kubectl config view - This command will show the contents of config file.
  
  * Put the GitHub Repository URL,this URL has to contain the following rs1.yml file and must be initialised as well.
  ![](JenkinswithKubernetes/20.PNG)
+ ![](JenkinswithKubernetes/28.PNG)
  
  * Execute Shell will contain the following code.
  ![](JenkinswithKubernetes/21.PNG)
  This command will build successfully on first build but on second build it will fail because the pods and ReplicaSet will already be running with the same name.
  ![](JenkinswithKubernetes/22.PNG)
  
- * Therefore update the Execute shell,by putting if and else commands.Here i have alsi exposed the RS so that i can the HTML page on browser on any system.
+ * Therefore update the Execute shell,by putting if and else commands.Here i have also exposed the RS so that i can the HTML page on browser on any system.
  ![](JenkinswithKubernetes/23.PNG)
  
  Thats it!!
